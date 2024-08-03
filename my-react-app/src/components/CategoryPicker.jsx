@@ -1,7 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 
 
 export const CategoryPicker = ({ setCategory }) => {
+
+    useEffect(() => {
+        handleCategoryClick("3D Modeling")
+      }, []); 
+
   const [toggledCategory, setToggledCategory] = useState(null);
 
   const handleCategoryClick = (category) => {
@@ -9,9 +14,6 @@ export const CategoryPicker = ({ setCategory }) => {
     setToggledCategory(category);
   };
 
-  const resetToggles = () => {
-    setToggledCategory(null);
-  };
 
   const categories = [
     "3D Modeling",
@@ -27,12 +29,15 @@ export const CategoryPicker = ({ setCategory }) => {
 
       <div className='row'>
         {categories.map((category) => (
+
           <Category
             key={category}
             category={category}
             isToggled={toggledCategory === category}
             onClick={() => handleCategoryClick(category)}
           />
+
+
         ))}
       </div>
     </div>
