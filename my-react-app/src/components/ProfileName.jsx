@@ -20,7 +20,7 @@ export const ProfileName = ({toggle}) => {
         }}
         >
             <div className='col-6'>
-                3rd Year BSc Computer Science
+                3rd Year BSc Computer Science <br/>
                 Bsc Microbiology & Immunology 
                 <br/><br/>
                 Montreal, QC
