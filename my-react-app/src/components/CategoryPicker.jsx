@@ -50,11 +50,11 @@ export const CategoryPicker = ({ setCategory }) => {
 const Category = ({ category, isToggled, onClick }) => {
   return (
     <div
-      className={`col-2 bg-danger ${isToggled ? "border-bottom" : ""}`}
+      className={`col-2 ${isToggled ? "border-bottom" : ""}`}
       onClick={onClick}
     >
-      <div className='row bg-primary align-items-center'>
-        <div className='col'>{category}</div>
+      <div className='row align-items-center'>
+        <div className='col' style={{fontFamily: "JetBrains", "fontSize":"1.2rem"}}>{category}</div>
       </div>
     </div>
   );
