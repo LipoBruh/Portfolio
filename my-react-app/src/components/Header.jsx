@@ -17,7 +17,7 @@ export const Header = () => {
 
 
   return (
-    <div className='row align-items-center bg-primary p-1' onClick={handleClick}>
+    <div className='row align-items-center color1 p-1' onClick={handleClick}>
         <ProfilePicture toggle={clicked}/>
         <ProfileName  toggle={clicked}/>
     </div>

@@ -64,3 +64,14 @@ table {
     font-weight: normal;
     src: url(./fonts/JetBrainsMono-Regular.woff2) format('woff2');
 }
+
+
+.color1 {
+	background-color:rgb(50,50,50) ;
+	color: white;
+}
+
+.color2 {
+	background-color:rgb(30,30,30) ;
+	color: white;
+}

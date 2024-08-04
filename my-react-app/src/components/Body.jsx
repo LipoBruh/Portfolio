@@ -206,7 +206,7 @@ const webdevelopment = []
 
 
   return (
-    <div    className='row bg-secondary'   >
+    <div    className='row color2' >
 
         <CategoryPicker setCategory={setCategory}/>
 

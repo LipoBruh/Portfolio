@@ -25,7 +25,7 @@ export const CategoryPicker = ({ setCategory }) => {
   ];
 
   return (
-    <div className='col my-4 bg-primary'>
+    <div className='col my-4 color1'>
 
       <div className='row'>
         {categories.map((category) => (

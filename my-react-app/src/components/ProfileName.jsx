@@ -10,7 +10,7 @@ export const ProfileName = ({toggle}) => {
         <h1 className='display-1'>Émanuel Rollin</h1>
 
         <div
-        className='bg-secondary row rounded-bottom border-top'
+        className='color2 row rounded-bottom border-top'
         style={{
             fontFamily: "JetBrains",
             textAlign:"left",

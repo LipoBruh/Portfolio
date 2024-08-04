@@ -8,10 +8,12 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='container bg-danger'>
-      <Header/>
-      <Body/>
-    </div>
+      <div className="h-100 color2" >  
+        <div className='container bg-danger'>
+          <Header/>
+          <Body/>
+        </div>
+      </div>
   )
 }
 

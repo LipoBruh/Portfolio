@@ -58,7 +58,7 @@ export const Carousel = ({ entries }) => {
               key={index}
               className={`carousel-item ${index === currentIndex ? 'active' : ''}`}
             >
-              <img src={entry.src} className="d-block w-100 carousel-img" alt={entry.title} />
+              <img src={entry.src} className="d-block w-100 carousel-img" alt={entry.title} style={{"height":"800px","objectFit":"contain"}} />
               <div className="carousel-caption d-none d-md-block">
                 <h5>{entry.title}</h5>
                 <p>{entry.description}</p>
