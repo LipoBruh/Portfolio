@@ -20,6 +20,7 @@ import image33 from '../assets/Adobe/photoshop3.png'
 import image34 from '../assets/Adobe/photoshop4.png'
 import image35 from '../assets/Adobe/photoshop5.png'
 import image36 from '../assets/Adobe/lightroom1.png'
+import image37 from '../assets/Adobe/illustrator1.png'
 //Web dev
 //import image41 from '../assets/Web_Devlopment/calque1.png'
 //import image42 from '../assets/Web_Devlopment/calque2.png'
@@ -32,6 +33,7 @@ import image62 from '../assets/Microbiology/microbiology2.jpg'
 import image63 from '../assets/Microbiology/microbiology3.jpg'
 import image64 from '../assets/Microbiology/microbiology4.jpg'
 import image65 from '../assets/Microbiology/microbiology5.png'
+import { Description } from './Description'
 //
 //
 //
@@ -99,14 +101,24 @@ export const Body = () => {
       
       const adobe =[
         {
+          src: image36,
+          title: 'Lightroom',
+          description: 'I do photography every now and then.'
+        },
+        {
+          src: image35,
+          title: 'Digital Art',
+          description: 'One of the many drawings I have done on photoshop.'
+        },
+        {
+          src: image37,
+          title: 'Illustrator',
+          description: 'Ideal for vectorial art when I need a more corporate art style.'
+        },
+        {
           src: image31,
           title: 'Poster for a student club',
           description: 'This one used a midjourney prompt to make the dragon.'
-        },
-        {
-          src: image32,
-          title: 'Speed drawing',
-          description: 'A few minutes of fun.'
         },
         {
           src: image33,
@@ -119,14 +131,9 @@ export const Body = () => {
           description: ''
         },
         {
-          src: image35,
-          title: 'Digital Art',
-          description: 'One of the many drawings I have done on photoshop.'
-        },
-        {
-          src: image36,
-          title: 'Lightroom',
-          description: 'I do photography every now and then.'
+          src: image32,
+          title: 'Speed drawing',
+          description: 'A few minutes of fun.'
         }
       ];
     
@@ -178,22 +185,22 @@ const webdevelopment = []
         switch (category) {
 
           case '3D Modeling':
-            return <Carousel entries={_3dmodeling} />
+            return <> <Carousel entries={_3dmodeling} /> <Description text={"I have been 3D modeling as a hobby for about 5 years. I use Blender for my all of my projects, it allows me to explore all of the branches of the field. Nowadays I design all of my 3d prints myself !"}/> </>
 
           case '3D Printing':
-            return <Carousel entries={_3dprinting} />
+            return <> <Carousel entries={_3dprinting} /><Description text={"One of my favorite hobbies. Allows me to express a lot of creativity and it allows me to pretend to be an engineer. Pairs perfectly with 3d modeling."}/> </>
 
           case 'Adobe':
-            return <Carousel entries={adobe} />
+            return <> <Carousel entries={adobe} /><Description text={"I have used Adobe products since highschool. I usually use Photoshop, Illustrator and Lightroom the most. I've also done a lot of editing in Premiere as a teenager. "}/> </>
 
           case 'Web Development':
-            return <Carousel entries={webdevelopment} />
+            return <> <Carousel entries={webdevelopment} /><Description text={"Over the summer, I have worked on multiple React projects. My biggest was a web application that implements the MERN stack with typescript. We implemented a REST API with express and mongodb to implement authentification routes and database communication.\nWe also implemented a interactive D3.js canvas that uses Redux to manage application states. "}/> </>
 
           case 'Python':
-             return <Carousel entries={python} />
+             return <> <Carousel entries={python} /><Description text={"Last year, I have experimented with the discord API to design a bot that enhances the user experience for the discord chatroom of our Dungeons & Dragon club. It serves two puproses : monitor new users, and query our database for specific data. It is a short and rudimentary python script that handles the logic and the connectivity."}/> </>
 
           case 'Microbiology':
-            return <Carousel entries={microbiology} />
+            return <> <Carousel entries={microbiology} /><Description text={"I also graduated from as bachelor in microbiology. I was a lab technician for 2 years. I worked in a blood bank and participated in the quality control of the blood products. I also participated on research initiatives offered by the laboratory. "}/> </>
 
           default:
             return <h1>Page Not Found</h1>;

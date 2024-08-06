@@ -25,7 +25,7 @@ export const CategoryPicker = ({ setCategory }) => {
   ];
 
   return (
-    <div className='col my-4 color1'>
+    <div className='col color1'>
 
       <div className='row'>
         {categories.map((category) => (
@@ -54,7 +54,7 @@ const Category = ({ category, isToggled, onClick }) => {
       onClick={onClick}
     >
       <div className='row align-items-center'>
-        <div className='col' style={{fontFamily: "JetBrains", "fontSize":"1.2rem"}}>{category}</div>
+        <div className='col' style={{fontFamily: "JetBrains", "fontSize":"1.2rem",overflowWrap: "break-word"}}>{category}</div>
       </div>
     </div>
   );

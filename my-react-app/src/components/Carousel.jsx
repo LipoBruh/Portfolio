@@ -36,7 +36,7 @@ export const Carousel = ({ entries }) => {
   if (entries.length === 0) return null;
 
   return (
-    <div>
+    <div className='m-4'>
       <div id="carouselExampleIndicators" className="carousel slide" ref={carouselRef}>
         {/* Indicators */}
         <ol className="carousel-indicators">
@@ -58,7 +58,7 @@ export const Carousel = ({ entries }) => {
               key={index}
               className={`carousel-item ${index === currentIndex ? 'active' : ''}`}
             >
-              <img src={entry.src} className="d-block w-100 carousel-img" alt={entry.title} style={{"height":"800px","objectFit":"contain"}} />
+              <img src={entry.src} className="d-block w-100 carousel-img rounded border border-dark" alt={entry.title} style={{"height":"800px","objectFit":"contain","borderColor":"rgb(15,15,15) important!"}} />
               <div className="carousel-caption d-none d-md-block">
                 <h5>{entry.title}</h5>
                 <p>{entry.description}</p>
