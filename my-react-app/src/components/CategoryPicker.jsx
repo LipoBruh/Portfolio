@@ -50,7 +50,7 @@ export const CategoryPicker = ({ setCategory }) => {
 const Category = ({ category, isToggled, onClick }) => {
   return (
     <div
-      className={`col-2 ${isToggled ? "border-bottom" : ""}`}
+      className={`col-2 clickable ${isToggled ? "border-bottom" : ""}`}
       onClick={onClick}
     >
       <div className='row align-items-center'>

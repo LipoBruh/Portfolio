@@ -13,6 +13,7 @@ import image21 from '../assets/3D_Printing/print1.png'
 import image22 from '../assets/3D_Printing/print2.png'
 import image23 from '../assets/3D_Printing/print3.png'
 import image24 from '../assets/3D_Printing/print4.png'
+import image25 from '../assets/3D_Printing/print5.jpg'
 //images adobe
 import image31 from '../assets/Adobe/photoshop1.png'
 import image32 from '../assets/Adobe/photoshop2.png'
@@ -22,8 +23,8 @@ import image35 from '../assets/Adobe/photoshop5.png'
 import image36 from '../assets/Adobe/lightroom1.png'
 import image37 from '../assets/Adobe/illustrator1.png'
 //Web dev
-//import image41 from '../assets/Web_Devlopment/calque1.png'
-//import image42 from '../assets/Web_Devlopment/calque2.png'
+import image41 from '../assets/Web_Development/calque1.png'
+import image42 from '../assets/Web_Development/portfolio1.png'
 //Python
 import image51 from '../assets/Python/bot1.png'
 import image52 from '../assets/Python/bot2.png'
@@ -76,9 +77,14 @@ export const Body = () => {
 
       const _3dprinting = [
         {
+          src: image25,
+          title: 'Master Sword In Real Life',
+          description: 'Final result once the model is printed and assembled.'
+        },
+        {
           src: image21,
           title: 'Birthday Gift',
-          description: ''
+          description: 'Tracing svg paths and extruding them to produce geometry. A filament swap is required to trace the characters in black.'
         },
         {
           src: image22,
@@ -89,11 +95,6 @@ export const Body = () => {
           src: image23,
           title: 'Chess pieces',
           description: 'Another gift for the family :)'
-        },
-        {
-          src: image24,
-          title: 'Master Sword In Real Life',
-          description: 'Final result once the model is printed and assembled.'
         }
       ];
 
@@ -103,12 +104,12 @@ export const Body = () => {
         {
           src: image36,
           title: 'Lightroom',
-          description: 'I do photography every now and then.'
+          description: 'I do photography every now and then. Color grading is quite easy in lightroom.'
         },
         {
           src: image35,
           title: 'Digital Art',
-          description: 'One of the many drawings I have done on photoshop.'
+          description: 'One of the many drawings I have done on photoshop. Pretty much only brushing and layering is used here.'
         },
         {
           src: image37,
@@ -128,7 +129,7 @@ export const Body = () => {
         {
           src: image34,
           title: 'Poster for the student association',
-          description: ''
+          description: 'Some illustrator elements are easily identifiable here.'
         },
         {
           src: image32,
@@ -137,7 +138,17 @@ export const Body = () => {
         }
       ];
     
-const webdevelopment = []
+const webdevelopment = [
+  {
+    src: image41,
+    title: 'Calque Web App',
+    description: 'Interactive map creation tool. Allows edition, exportation and saving of a map project. The backend is built with a MERN stack, uses the express REST API architecture. The frontend is  built with React, Typescript and stylized with Tailwind. The interactive map is built with D3.js which allows .svg exports. Collaborative project made over a period of 3 months.'
+  },
+  {
+    src: image42,
+    title: 'My Portfolio',
+    description: 'A simple React web page. Used as an exercice to play with React and Boostrap. It was fully made under a day :)'
+  }]
 
       const python =[
         {

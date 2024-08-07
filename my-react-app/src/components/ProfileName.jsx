@@ -7,7 +7,7 @@ import { MdEmail } from "react-icons/md";
 export const ProfileName = ({toggle}) => {
   return (
     <div className='col-8'>
-        <h1 className='display-1'>Émanuel Rollin</h1>
+        <h1 className='display-1 clickable'>Émanuel Rollin</h1>
 
         <div
         className='color2 row rounded-bottom border-top'
@@ -27,10 +27,10 @@ export const ProfileName = ({toggle}) => {
 
             </div>
             <div className='col-6'>
-                <a href="https://github.com/LipoBruh" style={{color:"#FFFFFF","textDecoration": "none"}}> <FaGithub /> Github</a> <br/>
-                <a href="https://www.thingiverse.com/lipo_bruh" style={{color:"#FFFFFF","textDecoration": "none"}}> <IoShareSocialSharp /> Thignyverse</a> <br/>
+                <a href="https://github.com/LipoBruh" target="_blank" rel="noopener noreferrer" style={{color:"#FFFFFF","textDecoration": "none"}}> <FaGithub /> Github</a> <br/>
+                <a href="https://www.thingiverse.com/lipo_bruh" target="_blank" rel="noopener noreferrer" style={{color:"#FFFFFF","textDecoration": "none"}}> <IoShareSocialSharp /> Thignyverse</a> <br/>
                 <br/>
-                <a href="emanuel.rollin@umontreal.ca" style={{color:"#FFFFFF","textDecoration": "none"}}> <MdEmail /> Email</a> <br/>
+                <a href="emanuel.rollin@umontreal.ca" target="_blank" rel="noopener noreferrer" style={{color:"#FFFFFF","textDecoration": "none"}}> <MdEmail /> Email</a> <br/>
             </div>
 
 
