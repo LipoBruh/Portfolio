@@ -1,5 +1,5 @@
 import React from 'react'
-import photo from '../assets/TEMP_PHOTO2.png'
+import photo from '../../public/assets/TEMP_PHOTO2.png'
 
 
 export const ProfilePicture = ({toggle}) => {
