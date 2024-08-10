@@ -62,6 +62,8 @@ const Category = ({ category, isToggled, onClick }) => {
     return () => {window.removeEventListener('resize', handleResize);};
   }, []);
 
+  handleResize()
+
   return (
     <div
       className={`py-2 col-2 clickable ${isToggled ? "border-bottom" : ""}`}
