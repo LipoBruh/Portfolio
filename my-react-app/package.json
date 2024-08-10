@@ -2,7 +2,7 @@
   "name": "my-react-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://LipoBruh.github.io/react-gh-pages",
+  "homepage": "https://LipoBruh.github.io/Portfolio",
   "type": "module",
 "scripts": {
   "dev": "vite",
