@@ -52,7 +52,7 @@ export const CategoryPicker = ({ setCategory }) => {
 const Category = ({ category, isToggled, onClick }) => {
 
   //responsive font resizer
-  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 768);
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 1000);
 
   //will add an event listener on first render
   useEffect(() => {
@@ -62,7 +62,7 @@ const Category = ({ category, isToggled, onClick }) => {
     return () => {window.removeEventListener('resize', handleResize);};
   }, []);
 
-  handleResize()
+  
 
   return (
     <div
