@@ -7,7 +7,7 @@ import { MdEmail } from "react-icons/md";
 export const ProfileName = ({toggle}) => {
   return (
     <div className='col-8'>
-        <h1 className='display-1 clickable'>Émanuel Rollin</h1>
+        <h1 className='display-1 clickable' style={{fontFamily: "'Segoe UI', Arial, sans-serif"}}>Émanuel Rollin</h1>
 
         <div
         className='color2 row rounded-bottom border-top'

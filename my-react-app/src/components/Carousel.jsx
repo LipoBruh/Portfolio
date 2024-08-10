@@ -60,8 +60,8 @@ export const Carousel = ({ entries }) => {
             >
               <img src={entry.src} className="d-block w-100 carousel-img rounded border border-dark" alt={entry.title} style={{"height":"800px","objectFit":"contain","borderColor":"rgb(15,15,15) important!", paddingBottom:"150px"}} />
               <div className="carousel-caption d-none d-md-block rounded" > 
-                <h5>{entry.title}</h5>
-                <p>{entry.description}</p>
+                <h5 style={{ fontFamily: "'Segoe UI', Arial, sans-serif"}} >{entry.title}</h5>
+                <p style={{ fontFamily: "'Segoe UI', Arial, sans-serif"}}>{entry.description}</p>
               </div>
             </div>
           ))}
