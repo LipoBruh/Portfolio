@@ -25,6 +25,7 @@ import image37 from '../../public/assets/Adobe/illustrator1.png'
 //Web dev
 import image41 from '../../public/assets/Web_Development/calque1.png'
 import image42 from '../../public/assets/Web_Development/portfolio1.png'
+import image43 from '../../public/assets/Web_Development/calque2.png'
 //Python
 import image51 from '../../public/assets/Python/bot1.png'
 import image52 from '../../public/assets/Python/bot2.png'
@@ -143,6 +144,11 @@ const webdevelopment = [
     src: image41,
     title: 'Calque Web App',
     description: 'Interactive map creation tool. Allows edition, exportation and saving of a map project. The backend is built with a MERN stack, uses the express REST API architecture. The frontend is  built with React, Typescript and stylized with Tailwind. The interactive map is built with D3.js which allows .svg exports. Collaborative project made over a period of 3 months.'
+  },
+  {
+    src: image43,
+    title: 'Calque : Low Level Diagram',
+    description: 'A simple Activity Diagram illustrating the various user interactions possible on our web app.'
   },
   {
     src: image42,

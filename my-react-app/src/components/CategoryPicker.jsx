@@ -64,7 +64,7 @@ const Category = ({ category, isToggled, onClick }) => {
 
   return (
     <div
-      className={`col-2 clickable ${isToggled ? "border-bottom" : ""}`}
+      className={`py-2 col-2 clickable ${isToggled ? "border-bottom" : ""}`}
       onClick={onClick}
     >
       <div className='row align-items-center'>
